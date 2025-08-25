@@ -197,45 +197,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Location Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="heading-section text-primary mb-6 fade-in-up">
-                Based in Stockholm, Serving Local Businesses
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6 fade-in-up">
-                We're proud to call Stockholm home. Our local knowledge gives us unique insights into the cleaning services market, seasonal patterns, and customer behavior in our city.
-              </p>
-              <div className="flex items-center text-muted-foreground mb-4">
-                <MapPin className="w-5 h-5 text-primary mr-3" />
-                <span>Stockholm, Sweden</span>
-              </div>
-              <div className="flex items-center text-muted-foreground mb-8">
-                <Mail className="w-5 h-5 text-primary mr-3" />
-                <span>hello@stockholmdigitalboost.se</span>
-              </div>
-              <Button size="lg" className="btn-hero fade-in-up" asChild>
-                <Link to="/contact">Schedule a Meeting</Link>
-              </Button>
-            </div>
-
-            <Card className="service-card border-0">
-              <CardContent className="p-8">
-                <div className="bg-muted/50 rounded-lg h-64 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                    <p className="text-muted-foreground">
-                      Interactive map showing our Stockholm location would be embedded here
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-accent to-accent-light">
