@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import LoadingOverlay from "./components/LoadingOverlay";
 import { LoadingProvider } from "./hooks/useLoading";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -24,6 +25,7 @@ const App = () => (
       <BrowserRouter>
         <LoadingProvider>
           <ScrollToTop />
+          <LoadingOverlay />
           <div className="min-h-screen flex flex-col">
             <Navigation />
             <main className="flex-1">

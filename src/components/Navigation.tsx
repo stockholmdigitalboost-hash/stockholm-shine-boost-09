@@ -32,7 +32,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/d47aed23-6fdb-41ea-9871-df5bf6312c5b.png" 
               alt="Stockholm Digital Boost" 
-              className={`h-10 w-auto transition-all duration-300 ${isLoading ? 'logo-loading' : ''}`}
+              className="h-10 w-auto"
             />
             <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors hidden sm:block">
               Stockholm Digital Boost
