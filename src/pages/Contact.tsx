@@ -65,13 +65,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@stockholmdigitalboost.se",
+      value: "stockholmdigitalboost@gmail.com",
       description: "Send us a message anytime"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+46 8 123 456 78",
+      value: "+447479941177",
       description: "Call us during business hours"
     },
     {

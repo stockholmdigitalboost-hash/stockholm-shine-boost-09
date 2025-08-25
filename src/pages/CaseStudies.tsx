@@ -186,6 +186,54 @@ const CaseStudies = () => {
                 </cite>
               </CardContent>
             </Card>
+
+            <Card className="service-card hover-lift">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-accent fill-current" />
+                  ))}
+                </div>
+                <blockquote className="text-lg text-foreground mb-4">
+                  "Before working with Stockholm Digital Boost, we were invisible online. Now we're ranked #1 for 'office cleaning Stockholm' and get 30+ calls per week. The ROI has been incredible - we've tripled our revenue in just 6 months."
+                </blockquote>
+                <cite className="text-muted-foreground">
+                  — Magnus Andersson, Nordic Clean Solutions
+                </cite>
+              </CardContent>
+            </Card>
+
+            <Card className="service-card hover-lift">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-accent fill-current" />
+                  ))}
+                </div>
+                <blockquote className="text-lg text-foreground mb-4">
+                  "Their team rebuilt our entire online presence from the ground up. The new website looks amazing and converts so much better. We went from 2-3 bookings per month to being fully booked 3 weeks in advance."
+                </blockquote>
+                <cite className="text-muted-foreground">
+                  — Sarah Lindström, Stockholm Home Cleaning
+                </cite>
+              </CardContent>
+            </Card>
+
+            <Card className="service-card hover-lift">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 text-accent fill-current" />
+                  ))}
+                </div>
+                <blockquote className="text-lg text-foreground mb-4">
+                  "The review management system they set up for us has been a game-changer. We now have over 200 five-star reviews on Google and our rating went from 3.2 to 4.9 stars. Customers trust us before they even call."
+                </blockquote>
+                <cite className="text-muted-foreground">
+                  — Peter Johansson, Elite Cleaning Services
+                </cite>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

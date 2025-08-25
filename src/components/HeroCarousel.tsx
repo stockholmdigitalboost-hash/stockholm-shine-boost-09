@@ -13,7 +13,7 @@ const slides = [
     subheadline: "We help you get found by customers in Stockholm.",
     cta: "See Our Services",
     ctaLink: "/services",
-    background: "bg-gradient-to-r from-primary/90 via-primary-light/90 to-accent/90",
+    background: "bg-gradient-to-r from-primary/60 via-primary-light/60 to-accent/60",
     image: heroSlide1
   },
   {
@@ -22,7 +22,7 @@ const slides = [
     subheadline: "From simple landing pages to full booking systems.",
     cta: "View Case Studies",
     ctaLink: "/case-studies",
-    background: "bg-gradient-to-r from-primary-dark/90 via-primary/90 to-primary-light/90",
+    background: "bg-gradient-to-r from-primary-dark/60 via-primary/60 to-primary-light/60",
     image: heroSlide2
   },
   {
@@ -31,7 +31,7 @@ const slides = [
     subheadline: "Get your free GMB audit today.",
     cta: "Get Free Audit",
     ctaLink: "/contact",
-    background: "bg-gradient-to-r from-accent/90 via-accent-light/90 to-primary/90",
+    background: "bg-gradient-to-r from-accent/60 via-accent-light/60 to-primary/60",
     image: heroSlide3
   }
 ];
