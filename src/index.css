@@ -140,6 +140,11 @@
     animation: float 3s ease-in-out infinite;
   }
 
+  /* Logo Loading Animation */
+  .logo-loading {
+    animation: logoRoll 1s linear infinite;
+  }
+
   /* Hover Effects */
   .hover-lift {
     transition: var(--transition-smooth);
@@ -254,5 +259,14 @@
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes logoRoll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

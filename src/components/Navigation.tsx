@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sparkles } from "lucide-react";
+import { useLoading } from "@/hooks/useLoading";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { isLoading, setLoading } = useLoading();
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -22,11 +24,15 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          <Link 
+            to="/" 
+            className="flex items-center space-x-3 group"
+            onClick={() => setLoading(true)}
+          >
             <img 
               src="/lovable-uploads/d47aed23-6fdb-41ea-9871-df5bf6312c5b.png" 
               alt="Stockholm Digital Boost" 
-              className="h-10 w-auto"
+              className={`h-10 w-auto transition-all duration-300 ${isLoading ? 'logo-loading' : ''}`}
             />
             <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors hidden sm:block">
               Stockholm Digital Boost
@@ -39,6 +45,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.href}
+                onClick={() => setLoading(true)}
                 className={`px-3 py-2 text-sm font-medium transition-all duration-200 rounded-md ${
                   isActive(item.href)
                     ? "text-primary bg-primary/10"
@@ -49,7 +56,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Button variant="default" className="btn-hero" asChild>
-              <Link to="/contact">Get Free Audit</Link>
+              <Link to="/contact" onClick={() => setLoading(true)}>Get Free Audit</Link>
             </Button>
           </div>
 
@@ -78,14 +85,20 @@ const Navigation = () => {
                       ? "text-primary bg-primary/10"
                       : "text-muted-foreground hover:text-primary hover:bg-primary/5"
                   }`}
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    setIsOpen(false);
+                    setLoading(true);
+                  }}
                 >
                   {item.name}
                 </Link>
               ))}
               <div className="pt-2">
                 <Button variant="default" className="btn-hero w-full" asChild>
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>
+                  <Link to="/contact" onClick={() => {
+                    setIsOpen(false);
+                    setLoading(true);
+                  }}>
                     Get Free Audit
                   </Link>
                 </Button>
